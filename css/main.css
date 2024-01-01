@@ -1,0 +1,89 @@
+:root {
+    --main-color: #F8FFFF;
+    --transition: .4s;
+}
+
+* {
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    background-color: #24353F;
+    overflow: hidden;
+}
+
+
+#VideoHome,
+#myVideo {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+
+@media (max-width: 768px) {
+
+    #VideoHome,
+    #myVideo {
+        width: unset;
+    }
+
+}
+
+
+h1 {
+    color: var(--main-color);
+    font-weight: bolder;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
+
+.sign-up-card>a,
+.sign-in-card>a {
+    display: block;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    padding: 10px 25px;
+    font-weight: bold;
+    transition: var(--transition);
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.signin-page a:hover,
+.signup-page a:hover {
+    background-color: var(--main-color);
+    color: black;
+}
+
+.sign-in-card,
+.homepage-card,
+.sign-up-card {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sign-in-card p,
+.sign-up-card p {
+    width: fit-content;
+}
+
+
+
+.homePage h1 {
+    color: white;
+}
+
+
+.home-page .navbar .container .btn-logOut:hover {
+    color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.home-page .navbar {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.15);
+}
