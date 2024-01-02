@@ -81,6 +81,7 @@ signUpBtnElement.addEventListener('click', function () {
         }
 
         if (!ml_RegExp.test(emailAddressElement.value)) {
+            mailMsgError.innerHTML = 'Invalid Email Address.';
             document.querySelector('.ml-re-msg').classList.remove('d-none');
         }
         else {
