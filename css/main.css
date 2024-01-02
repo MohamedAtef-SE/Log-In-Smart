@@ -1,5 +1,6 @@
 :root {
     --main-color: #F8FFFF;
+    --home-main-color: #165CBB;
     --transition: .4s;
 }
 
@@ -9,29 +10,11 @@
 
 body {
     background-color: #24353F;
+    background-image: url(../Images/sign.jpg);
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
-
-
-#VideoHome,
-#myVideo {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-}
-
-
-@media (max-width: 768px) {
-
-    #VideoHome,
-    #myVideo {
-        width: unset;
-    }
-
-}
-
 
 h1 {
     color: var(--main-color);
@@ -59,9 +42,8 @@ h1 {
 }
 
 .sign-in-card,
-.homepage-card,
 .sign-up-card {
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -71,19 +53,27 @@ h1 {
 }
 
 
-
-.homePage h1 {
-    color: white;
+/* * HOME Section */
+.mainHome {
+    background-image: url(../Images/home.jpg);
 }
 
 
 .home-page .navbar .container .btn-logOut:hover {
-    color: var(--main-color) !important;
+    color: var(--home-main-color) !important;
     border-color: var(--main-color) !important;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.25);
 }
 
-.home-page .navbar {
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
-    background-color: rgba(255, 255, 255, 0.15);
+.home-page .navbar-brand,
+.home-page h1 {
+    color: var(--home-main-color);
+    font-weight: bold;
+    text-shadow: 0px 0px 20px rgba(250, 250, 250, 0.7);
+}
+
+.home-page .navbar,
+.homepage-card {
+    box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.25);
+    background-color: rgba(0, 0, 0, 0.1);
 }
